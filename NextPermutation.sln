@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextPermutation", "NextPermutation\NextPermutation.csproj", "{CDF64617-6639-47CA-B5F3-749A76051BC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NextPermutation", "NextPermutation\NextPermutation.csproj", "{CDF64617-6639-47CA-B5F3-749A76051BC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextPermutation.Test", "NextPermutation.Test\NextPermutation.Test.csproj", "{B448AC37-B646-4304-9BC0-F8694FB26741}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CDF64617-6639-47CA-B5F3-749A76051BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDF64617-6639-47CA-B5F3-749A76051BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDF64617-6639-47CA-B5F3-749A76051BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B448AC37-B646-4304-9BC0-F8694FB26741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B448AC37-B646-4304-9BC0-F8694FB26741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B448AC37-B646-4304-9BC0-F8694FB26741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B448AC37-B646-4304-9BC0-F8694FB26741}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
