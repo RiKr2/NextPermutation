@@ -2,10 +2,8 @@
 {
     public class NextPermutationService
     {
-        private int[] _numbers;
-        public NextPermutationService(int[] numbers)
+        public NextPermutationService()
         {
-            _numbers = numbers;
         }
 
         /// <summary>
@@ -17,27 +15,27 @@
         /// <returns>
         /// The next permutation of the array
         /// </returns>
-        public int[] GetNextPermutation()
+        public int[] GetNextPermutation(int[] numbers)
         {
-            for (int i = _numbers.Length - 1; i >= 1; i--)
+            for (int i = numbers.Length - 1; i >= 1; i--)
             {
-                if (_numbers[i - 1] < _numbers[i]) // Searching first decrecing element from end to front in array
+                if (numbers[i - 1] < numbers[i]) // Searching first decrecing element from end to front in array
                 {
-                    for (int j = _numbers.Length - 1; j >= i - 1; j--)
+                    for (int j = numbers.Length - 1; j >= i - 1; j--)
                     {
-                        if (_numbers[j] > _numbers[i - 1]) // Searching first element greater than found from end to front in array
+                        if (numbers[j] > numbers[i - 1]) // Searching first element greater than found from end to front in array
                         {
-                            Swap(_numbers, i - 1, j); // Swapping numbers
-                            Reverse(_numbers, i); // Reverse the rest of the elements in array
-                            return _numbers;
+                            Swap(numbers, i - 1, j); // Swapping numbers
+                            Reverse(numbers, i); // Reverse the rest of the elements in array
+                            return numbers;
                         }
                     }
                 }
             }
             // if not found the array is in decrecing order
             // then the next permutation is the array in ascending order
-            Reverse(_numbers, 0);
-            return _numbers;
+            Reverse(numbers, 0);
+            return numbers;
         }
 
         /// <summary>

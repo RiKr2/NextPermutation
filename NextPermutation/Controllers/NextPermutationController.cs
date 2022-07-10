@@ -10,9 +10,9 @@ namespace NextPermutation.Controllers
         [HttpPost(Name = "getNextPermutation")]
         public IEnumerable<int> GetNextPermutation(int[] numbers)
         {
-            NextPermutationService _service = new NextPermutationService(numbers);
+            NextPermutationService _service = new NextPermutationService();
 
-            return _service.GetNextPermutation();
+            return _service.GetNextPermutation(numbers);
         }
     }
 }
