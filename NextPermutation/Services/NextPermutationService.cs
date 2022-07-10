@@ -28,7 +28,7 @@
                         if (_numbers[j] > _numbers[i - 1]) // Searching first element greater than found from end to front in array
                         {
                             Swap(_numbers, i - 1, j); // Swapping numbers
-                            Reverse(_numbers, j); // Reverse the rest of the elements in array
+                            Reverse(_numbers, i); // Reverse the rest of the elements in array
                             return _numbers;
                         }
                     }
