@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NextPermutation.Services;
 
 namespace NextPermutation.Controllers
 {
@@ -7,9 +8,11 @@ namespace NextPermutation.Controllers
     public class NextPermutationController : ControllerBase
     {
         [HttpPost(Name = "getNextPermutation")]
-        public IEnumerable<int> Get()
+        public IEnumerable<int> GetNextPermutation(int[] numbers)
         {
-            throw new NotImplementedException();
+            NextPermutationService _service = new NextPermutationService(numbers);
+
+            return _service.GetNextPermutation();
         }
     }
 }
